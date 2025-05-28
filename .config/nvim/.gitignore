@@ -1,0 +1,10 @@
+# Ignore packer.nvim compiled output
+/plugin/packer_compiled.lua
+
+# Optional: ignore backups/swap/session files
+*.swp
+*.swo
+session.*
+shada/
+undo/
+
