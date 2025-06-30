@@ -45,3 +45,15 @@ vim.o.statusline = table.concat({
 
 
 
+-- SCRIPTS --------------------------------------------------------------------
+
+-- set tabstop based on filetype
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "javascript", "typescript", "html", "css" },
+    callback = function()
+        vim.bo.tabstop = 2
+        vim.bo.shiftwidth = 2
+        vim.bo.expandtab = true
+    end,
+})
+
