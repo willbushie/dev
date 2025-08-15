@@ -23,8 +23,9 @@ return require('packer').startup(function(use)
 	end
   })
 
-  -- treesitter & other
+  -- treesitter & other (highlighting)
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  -- view AST of current editor (helpful for plugin creation)
   use('nvim-treesitter/playground')
   use('mbbill/undotree')
 
