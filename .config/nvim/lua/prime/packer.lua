@@ -36,4 +36,19 @@ return require('packer').startup(function(use)
 
   -- vim motions game
   use('theprimeagen/vim-be-good')
+
+  -- lsp & code completion
+  -- neovim lsp
+  use('neovim/nvim-lspconfig')
+  -- lsp autocomplete
+  use('hrsh7th/nvim-cmp')
+  use('hrsh7th/cmp-nvim-lsp')
+  -- -- package manager (good to manage lsp stuff)
+  -- use('mason-org/mason.nvim')
+
+  -- keybind helper
+  use('folke/which-key.nvim')
+  -- icons for which-key (requires nerd fonts to function)
+  -- https://github.com/ryanoasis/nerd-fonts
+  use('nvim-tree/nvim-web-devicons')
 end)
