@@ -4,6 +4,7 @@ Simple explination for directories and their purpose for when I forget what is g
 
 Directory Structure: 
 
+```
 ~/.config/nvim/
 ├── init.lua                -- the first file nvim loads
 ├── lua/
@@ -25,6 +26,7 @@ Directory Structure:
 │       └── whichkey.lua    -- which_key config
 └── plugin/
     └── packer_compiled.lua -- auto generated file from packer
+```
 
 ### init.lua
 
